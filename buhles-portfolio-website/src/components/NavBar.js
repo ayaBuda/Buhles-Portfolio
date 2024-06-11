@@ -1,11 +1,12 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+import { Navbar, Container, Nav } from 'react-bootstrap';
+// import Nav from 'react-bootstrap/Nav';
+// import Navbar from 'react-bootstrap/Navbar';
 import { useState, useEffect } from 'react';
-import navIcon1 from ".../assets/images/nav-icon1";
-import navIcon2 from ".../assets/images/nav-icon2";
-import navIcon3 from ".../assets/images/nav-icon3";
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import logo from '../assets/images/logo.svg';
+import navIcon1 from "../assets/images/logo.png";
+import navIcon2 from "../assets/images/locate.jpg";
+import navIcon3 from "../assets/images/collect.jpg";
+// import NavDropdown from 'react-bootstrap/NavDropdown';
 
 export const NavBar = () => {
     const [activeLink, setActiveLink] = useState('home');
@@ -21,7 +22,7 @@ export const NavBar = () => {
         }
 
     window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener(scroll, onScroll)
+    return () => window.removeEventListener("scroll", onScroll)
     }, [])
 
     const onUpdateActiceLink =  (value) => {
@@ -32,7 +33,7 @@ export const NavBar = () => {
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
       <Container>
         <Navbar.Brand href="#home">
-            <img src={logo} alt="Logo" />
+            <img src={ logo } alt="Logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
              <span className='navbar-toggle-icon'></span>   
