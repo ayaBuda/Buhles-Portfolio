@@ -3,9 +3,9 @@ import { Navbar, Container, Nav } from 'react-bootstrap';
 // import Navbar from 'react-bootstrap/Navbar';
 import { useState, useEffect } from 'react';
 import logo from '../assets/images/logo.svg';
-import navIcon1 from "../assets/images/logo.png";
-import navIcon2 from "../assets/images/locate.jpg";
-import navIcon3 from "../assets/images/collect.jpg";
+import navIcon1 from "../assets/images/BLinked.png";
+import navIcon2 from "../assets/images/BInsta.png";
+import navIcon3 from "../assets/images/BFaceB.png";
 // import NavDropdown from 'react-bootstrap/NavDropdown';
 
 export const NavBar = () => {
